@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select mode</title>
+    <link rel="stylesheet" href="static/mode.css">
+</head>
+<body>
+
+    <form action="/stats" method = "POST">
+        <p>
+            <label for="Mode_id" >Select Mode: </label>
+              <select name="Mode" id="Mode_id">
+                <option value="Auto">Auto</option>
+                <option value="Manual">Manual</option>
+              </select>
+        </p>
+        <p>
+            <input type="submit" value="View Stats">
+        </p>
+    </form>
+
+</body>
+</html>

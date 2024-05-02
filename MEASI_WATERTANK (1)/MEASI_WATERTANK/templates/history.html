@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>history</title>
+    <link rel="stylesheet" href="static/history.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+
+<body>
+{{x_values}}
+{{y_elect}}
+{{y_run_time}}
+<canvas id="myChart" style="width:100%;max-width:800px"></canvas>
+<script>
+const xValues =['MON','TUE','WED','THU','FRI','SAT','SUN'];
+    new Chart("myChart", {
+      type: "line",
+      data: {
+        labels: xValues,
+        datasets: [{
+          yAxisID: 'A',
+          label: "Over All Run Duration in Hour(s)",
+          data:{{y_run_time}},
+          borderColor: "red",
+          fill: false
+                    },
+                    {
+          yAxisID: 'B',
+          label: "Electricity Consumption in kW",
+          data:{{y_elect}},
+          borderColor: "green",
+          fill: false
+                    }]
+            },
+      options: {
+          title: {
+               display: true,
+               text: 'Weekly History',
+               color: 'navy'
+            },
+          legend: {display: true},
+          scales: {
+              yAxes: [{
+                id: 'A',
+                type: 'linear',
+                position: 'right',
+              }, {
+                id: 'B',
+                type: 'linear',
+                position: 'left',
+
+              }]
+              }
+            }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stats</title>
+    <link rel="stylesheet" href="static/status.css">
+     <style>
+         table,th,td   {
+                        border: 1px solid black;
+                        border-collapse: collapse;
+                        text-align:center;
+                        }
+    </style>
+</head>
+<body>
+
+<h3>Pump Mode: <span style="color:blue;">{{mode}}</span></h3>
+
+<table>
+    {% for key,value in data_today.items() %}
+    <tr>
+        <td style="font-size: 16px;"><b>{{ key }}</b></td>
+        <td style="color:blue;">{{value}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<a href={{url_for('history')}}><input type="button" value="view history" /></a>
+</body>
+</html>

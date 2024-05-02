@@ -1,0 +1,18 @@
+/* Styles for the chart canvas */
+#myChart {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+body {
+    background-color: aqua;
+
+
+}

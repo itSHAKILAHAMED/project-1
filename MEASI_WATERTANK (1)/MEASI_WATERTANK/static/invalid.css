@@ -1,0 +1,81 @@
+
+/* Style the form container */ 
+body{ 
+ background: linear-gradient(to right,#4871ed,#47d0d0);
+} 
+form { 
+ 
+border: 2px solid #16a8cc;
+ text-align:center;
+ border-radius: 5px;
+ max-width: 500px;
+margin: 220px 420px;
+
+padding: 20px 30px;
+ background-color: #3dbeb1;
+ 
+} 
+/* Style the form headings */ 
+h2 { 
+ text-align: center;
+ font-size: 28px;
+ font-weight: bold;
+color: #333;
+} 
+/* Style the form label */ 
+label { 
+display: block;
+ margin-bottom: 10px;
+ font-size: 16px;
+ font-weight: bold;
+color: #333;
+} 
+/* Style the form select dropdown */ 
+select { 
+width: 100%;
+padding: 12px 20px;
+margin: 10px 0;
+ display: inline-block;
+border: none;
+ border-radius: 3px;
+ background-color: #fff;
+ box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+} 
+
+/* Style the form select dropdown on focus */ 
+select:focus { 
+outline: none;
+ box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+} 
+/* Style the form submit button */ 
+input[type=submit] { 
+ background-color: #2ecc71;
+color: #fff;
+padding: 12px 20px;
+ margin: 20px 0 10px;
+border: none;
+ border-radius: 3px;
+cursor: pointer;
+ font-size: 16px;
+ font-weight: bold;
+ transition: background-color 0.2s ease;
+} 
+/* Style the form submit button on hover */ 
+input[type=submit]:hover { 
+ background-color: #2d48fd;
+} 
+/* Style the form error messages */ 
+.error-message { 
+color: #e74c3c;
+ font-size: 14px;
+margin: 5px 0 0;
+padding: 0;
+} 
+/* Style the form success messages */ 
+
+.success-message { 
+color: #2ecc71;
+ font-size: 14px;
+margin: 5px 0 0;
+padding: 0;
+} 
